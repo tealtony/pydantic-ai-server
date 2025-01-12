@@ -1,0 +1,100 @@
+.App-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chat-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.chat-history {
+  height: 60vh;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.message.user {
+  background-color: #e3f2fd;
+  margin-left: auto;
+  margin-right: 20px;
+  width: fit-content;
+  max-width: 70%;
+}
+
+.message.model {
+  background-color: #f5f5f5;
+  margin-right: auto;
+  margin-left: 20px;
+  width: fit-content;
+  max-width: 70%;
+}
+
+.message.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.message-header {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #bdbdbd;
+}
+
+.chat-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.clear-button {
+  background-color: #757575;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #616161;
+}
+
+.clear-button:disabled {
+  background-color: #bdbdbd;
+  cursor: not-allowed;
+} 

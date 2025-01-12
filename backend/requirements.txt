@@ -1,0 +1,6 @@
+fastapi==0.115.6
+uvicorn==0.34.0
+pydantic==2.10.5
+pydantic-ai==0.0.18
+python-dotenv==1.0.1
+openai==1.59.6 

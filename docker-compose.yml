@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_LOG_LEVEL=DEBUG
+    volumes:
+      - ./backend:/app
+    command: uvicorn main:app --host 0.0.0.0 --reload
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - WATCHPACK_POLLING=true
+      - CHOKIDAR_USEPOLLING=true
+      - FAST_REFRESH=true
+      - REACT_APP_API_URL=http://localhost:8000
+      - NODE_OPTIONS=--no-warnings
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend 
