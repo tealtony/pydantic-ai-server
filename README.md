@@ -41,13 +41,18 @@ A real-time chat application that combines FastAPI, React, and AI capabilities u
 1. Create a virtual environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate
    ```
    or
    ```bash
    conda create -n pydantic-ai-server python=3.11
    conda activate pydantic-ai-server
-   pip install -r backend/requirements.txt
+   ```
+
+2. Install dependencies:
+   ```bash
+   cd backend
+   pip install -r requirements.txt
    ```
 
 ### Frontend
@@ -59,6 +64,7 @@ A real-time chat application that combines FastAPI, React, and AI capabilities u
    ```
 
 ### Running the application
+The application can be run using Docker Compose. It will restart the backend and frontend automatically on code changes.
 
 ```bash
 docker-compose up --build
