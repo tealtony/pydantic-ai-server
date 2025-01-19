@@ -23,7 +23,7 @@ services:
       - REACT_APP_API_URL=http://localhost:8000
       - NODE_OPTIONS=--no-warnings
     volumes:
-      - ./frontend:/app
-      - /app/node_modules
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
     depends_on:
       - backend 

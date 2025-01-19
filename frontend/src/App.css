@@ -97,4 +97,81 @@ button:disabled {
 .clear-button:disabled {
   background-color: #bdbdbd;
   cursor: not-allowed;
+}
+
+/* Markdown Styles */
+.message-content pre {
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  padding: 16px;
+  overflow-x: auto;
+  margin: 8px 0;
+}
+
+.message-content code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 85%;
+}
+
+.message-content .inline-code {
+  background-color: rgba(175, 184, 193, 0.2);
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+}
+
+.message-content .code-block {
+  background: none;
+  padding: 0;
+}
+
+.message-content p {
+  margin: 0.5em 0;
+}
+
+.message-content ul, 
+.message-content ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+.message-content h1,
+.message-content h2,
+.message-content h3,
+.message-content h4,
+.message-content h5,
+.message-content h6 {
+  margin: 1em 0 0.5em;
+  line-height: 1.25;
+}
+
+.message-content a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+.message-content a:hover {
+  text-decoration: underline;
+}
+
+.message-content blockquote {
+  border-left: 3px solid #d0d7de;
+  margin: 0.5em 0;
+  padding-left: 1em;
+  color: #656d76;
+}
+
+.message-content table {
+  border-collapse: collapse;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.message-content th,
+.message-content td {
+  border: 1px solid #d0d7de;
+  padding: 6px 13px;
+}
+
+.message-content tr:nth-child(2n) {
+  background-color: #f6f8fa;
 } 
